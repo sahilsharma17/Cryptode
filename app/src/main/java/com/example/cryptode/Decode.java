@@ -37,7 +37,7 @@ public class Decode {
         }
 
         int num[] = new int[11111];
-        int nidx=0, temp=0, count=0;
+        int nidx=0; int temp=0; int count=0;
         for (int i = 0; i <= idx ; i++) {
             count = 0;
             temp = 0;
@@ -49,14 +49,14 @@ public class Decode {
             num[nidx++] = temp;
 
         }
-        String rev = "";
+        String rv = "";
         char ch;
         for (int i = 0; i < nidx; i++) {
             ch = (char)num[i];
-            rev = rev.concat(String.valueOf(ch));
+            rv = rv.concat(String.valueOf(ch));
         }
         if (data.length() %7 == 0 && flag == true){
-            return rev;
+            return rv;
         }else{
             return invalid;
         }

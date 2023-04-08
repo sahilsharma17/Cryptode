@@ -13,8 +13,8 @@ import android.widget.Toast;
 
 public class Encoder extends AppCompatActivity {
 
-    EditText etEncoder;
-    TextView tvEncoder;
+    EditText etenc;
+    TextView enctv;
     ClipboardManager cpb;
 
     @Override
@@ -22,21 +22,21 @@ public class Encoder extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_encoder);
 
-        etEncoder = findViewById(R.id.edtEncoder);
-        tvEncoder = findViewById(R.id.tvEncoder);
+        etenc = findViewById(R.id.etenc);
+        enctv = findViewById(R.id.enctv);
         cpb = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
 
 
 
     }
     public void enc(View view){
-        String temp = etEncoder.getText().toString();
-        String rv = Encode.encrypt(temp);
-        tvEncoder.setText(rv);
+        String temp = etenc.getText().toString();
+        String rv = Encode.enc(temp);
+        enctv.setText(rv);
     }
 
     public void cp2(View view){
-        String data = etEncoder.getText().toString();
+        String data = etenc.getText().toString();
         if (!data.isEmpty()){
             ClipData temp = ClipData.newPlainText("text",data);
             cpb.setPrimaryClip(temp);

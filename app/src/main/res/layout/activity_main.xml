@@ -32,38 +32,22 @@
                 />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="50dp"
-            android:layout_gravity="center"
-            >
-            
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="5dp"
-                android:background="@color/white"
-                android:id="@+id/divider1"/>
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_marginTop="5dp">-->
 
-        </LinearLayout>
+<!--            <ViewFlipper-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:id="@+id/vf"/>-->
+
+<!--        </LinearLayout>-->
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="5dp">
-
-            <ViewFlipper
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:id="@+id/vf"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center"
@@ -78,8 +62,8 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center"
             android:layout_marginTop="30dp">
@@ -91,12 +75,10 @@
                 android:layout_margin="5dp"
                 android:text="Encryption"
                 android:textColor="@color/black"
-                android:background="#62E3C9"
+                android:background="@drawable/btnoutline"
                 android:id="@+id/encryption_btn"
                 android:textSize="25sp"
-                >
-
-            </Button>
+                />
 
             <Button
                 android:layout_width="280dp"
@@ -104,11 +86,27 @@
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
                 android:text="decryption"
-                android:textColor="@color/black"
-                android:background="#DA5454"
+                android:textColor="@color/white"
+                android:background="@drawable/btnoutline2"
                 android:id="@+id/decryption_btn"
                 android:textSize="25sp"
                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:background="@color/white"
+                android:id="@+id/divider1"/>
 
         </LinearLayout>
     </LinearLayout>
